@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red"
+    android:orientation="vertical"
+    tools:context=".AddRelative">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="800dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo123"></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="325dp"
+        android:layout_height="387dp"
+        android:layout_margin="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="90dp"
+        android:paddingRight="20dp"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:hint="Name"
+
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_horizontal"
+            android:hint="Phone Number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="#CC0059"
+            android:text="Add Contact"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+
+</LinearLayout>
